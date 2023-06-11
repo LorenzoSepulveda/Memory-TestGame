@@ -51,6 +51,11 @@
   .cell {
     position: relative;
     cursor: pointer;
+    box-shadow: 5px 5px 10px #333;
+  }
+
+  .cell:hover{
+    transform: scale(1.05);
   }
   
   .front {
@@ -77,10 +82,35 @@
     font-size: small;
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 30px 0;
     position: relative;
   }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #replay-btn{
+    cursor: pointer;
+    padding: 10px;
+    background: rgb(255, 208, 0);
+    color: #333;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+  }
   
+  #replay-btn:hover{
+    color: #f2f2f2;
+  }
+  
+  #replay-btn:active{
+    transform:scale(1.1)
+  }
+
   img {
     height: 100px;
     width: 100px;

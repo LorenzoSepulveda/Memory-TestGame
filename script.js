@@ -2,13 +2,13 @@ const card = document.querySelectorAll('.cell')
 const front = document.querySelectorAll('.front')
 const container = document.querySelector('.container')
 const score = document.querySelector('.score span')
+const button = document.getElementById('replay-btn')
 
 
-
-suffleImage()
+ 
+shuffleImage()
 clicking()
-function suffleImage(){
-
+function shuffleImage(){
 
     card.forEach(c=>{
 
@@ -51,11 +51,8 @@ function clicking(){
     }
 }
 
-
-
-
 function match(cardOne , cardTwo){
-
+    
     if(cardOne.dataset.index == cardTwo.dataset.index){
 
         score.innerHTML = parseInt(score.innerHTML) + 1
@@ -65,9 +62,8 @@ function match(cardOne , cardTwo){
 
 
         cardOne.classList.add('match')
-        cardTwo.classList.add('match')
-
-
+        cardTwo.classList.add('match')        
+        
     }else{
 
         setTimeout(() => {
@@ -76,8 +72,23 @@ function match(cardOne , cardTwo){
             cardTwo.classList.remove('flip') 
         }, 1000);
     }
+    
+    if(score.innerHTML >= 6){
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'YOU WON!',
+            showConfirmButton: true
+        })
+    }
 }
 
+function replay(){
+    shuffleImage();
+    card.forEach(classList.remove(all))
+    card.forEach(classList.remove(all))
+    front.forEach(classList.remove('flip'))
+}
 // Loading Screen
 
 document.addEventListener("DOMContentLoaded", function() {
