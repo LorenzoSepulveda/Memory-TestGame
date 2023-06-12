@@ -10,7 +10,8 @@
     background: linear-gradient(0deg, rgba(252,240,115,1) 24%, rgba(255,223,62,1) 65%, rgba(238,192,62,1) 100%);}
   
   .head {
-    background: rgba(255,240,115,0.3);
+    /*background: rgba(255,240,115,0.3);*/
+    background: #f7d118;
     max-width: 450px;
     border-radius: 5px;
     box-shadow: 8px 8px 20px #333;
@@ -21,17 +22,19 @@
     align-items: center;
     flex-direction: column;
     margin-top: 25px;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Unbounded" ,cursive, sans-serif;
     color: #333;
   }
   
   h2{
     font-weight: bold;
+    color: #704213;
   }
   
   .score {
     margin-top: 10px;
     font-size: 20px;
+    color: #704213;
   }
   
   .container {
@@ -80,6 +83,7 @@
 
   footer{
     font-size: small;
+    color: #704213;
     display: flex;
     justify-content: center;
     padding: 30px 0;
@@ -87,6 +91,7 @@
   }
 
   .btn{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,16 +100,17 @@
   #replay-btn{
     cursor: pointer;
     padding: 10px;
-    background: rgb(255, 208, 0);
+    background: #f7d118;
     color: #333;
     border-radius: 10px;
     border: none;
     font-size: medium;
+    font-family: 'Unbounded', cursive;
     font-weight: bold;
   }
   
   #replay-btn:hover{
-    color: #f2f2f2;
+    color: #9f6709;
   }
   
   #replay-btn:active{

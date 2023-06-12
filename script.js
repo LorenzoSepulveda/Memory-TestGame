@@ -85,9 +85,10 @@ function match(cardOne , cardTwo){
 
 function replay(){
     shuffleImage();
-    card.forEach(classList.remove(all))
-    card.forEach(classList.remove(all))
-    front.forEach(classList.remove('flip'))
+    for(let i =0; i<card.length; i++){
+        front[i].classList.remove('match')
+    }
+    score.innerHTML = 0;
 }
 // Loading Screen
 
